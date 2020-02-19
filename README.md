@@ -31,3 +31,11 @@ docker exec -it <container-id> bash
 # run the second command, for example, if you want to start a jupyter notebook:
 jupyter notebook --ip 0.0.0.0 --no-browser --allow-root
 ```
+
+## Configure your IDE
+
+1. install dependencies on host (because your IDE can't use the dependencies inside the Docker container):
+`bin/install_deps_locally.sh`
+1. tell your IDE the path to the Python virtual environment on your host
+1. restart your IDE (you may have to give it a minute or 2)
+1. start using intellisense!
