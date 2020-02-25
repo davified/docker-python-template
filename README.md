@@ -1,5 +1,22 @@
 # Docker Python Template
 
+## Prerequisites
+
+1. [For Windows users] To install Docker Desktop, you'll need Windows 10 Pro or Enterprise version 15063.
+2. Install Docker
+
+- [for Mac](https://docs.docker.com/docker-for-mac/install/)
+- [for Linux](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
+- [for Windows](https://docs.docker.com/docker-for-windows/install/)
+
+- **Important things to note**:
+  - You will be prompted to create a DockerHub account. Follow the instructions in order to download Docker
+  - Follow the installation prompts (go with the default options) **until you have successfully started Docker**
+  - [Windows users] When prompted to enable Hyper-V and Containers features, click 'Ok' and let computer restart again.
+  - You may have to restart your computer 2-3 times.
+
+3. Start Docker on your desktop (Note: Wait for Docker to complete startup before running the subsequent commands. You'll know when startup is completed when the docker icon in your taskbar stops animating)
+
 ## Setup
 
 ```sh
@@ -35,7 +52,7 @@ jupyter notebook --ip 0.0.0.0 --no-browser --allow-root
 ## Configure your IDE
 
 1. install dependencies on host (because your IDE can't use the dependencies inside the Docker container):
-`bin/install_deps_locally.sh`
+   `bin/install_deps_locally.sh`
 1. tell your IDE the path to the Python virtual environment on your host
 1. restart your IDE (you may have to give it a minute or 2)
 1. start using intellisense!
