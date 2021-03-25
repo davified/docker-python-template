@@ -15,4 +15,4 @@ seaborn==0.9.0
 
 # nose-watch's dependencies
 argh==0.26.2
-PyYAML==5.3
+PyYAML==5.4
