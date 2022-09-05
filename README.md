@@ -5,9 +5,12 @@
 1. [For Windows users] To install Docker Desktop, you'll need Windows 10 Pro or Enterprise version 15063.
 2. Install Docker
 
-- [for Mac](https://docs.docker.com/docker-for-mac/install/)
-- [for Linux](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
-- [for Windows](https://docs.docker.com/docker-for-windows/install/)
+- If you have Docker Desktop license
+  - [for Mac](https://docs.docker.com/docker-for-mac/install/)
+  - [for Linux](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
+  - [for Windows](https://docs.docker.com/docker-for-windows/install/)
+- If you don't have a Docker Desktop license, you can use `colima`
+  - Setup instructions: https://gist.github.com/jcartledge/0ce114e9719a62a4776569e80088511d
 
 - **Important things to note**:
   - You will be prompted to create a DockerHub account. Follow the instructions in order to download Docker
@@ -20,6 +23,10 @@
 ## Setup
 
 ```sh
+# start colima (if you're not using Docker Desktop)
+colima start
+# if you need more resources, you can specify resources like this: `colima start --cpu 8 --memory 8 --disk 100`
+
 # build
 docker build . -t my-project
 
