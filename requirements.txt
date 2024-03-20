@@ -1,4 +1,4 @@
-black==19.10b0      # formatting
+black==24.3.0      # formatting
 jupyter==1.0.0
 matplotlib==3.0.2
 mypy==0.701
